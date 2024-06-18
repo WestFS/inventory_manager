@@ -57,7 +57,7 @@ def login_screen():
     frame_left = ctk.CTkFrame(login_window, width=360, height=450, fg_color="purple")
     frame_left.grid(row=1, column=0, sticky="nsew")
 
-    frame_right = ctk.CTkFrame(login_window, width=360, height=450, fg_color="transparent")
+    frame_right = ctk.CTkFrame(login_window, width=360, height=450)
     frame_right.grid(row=1, column=2, rowspan=2, sticky="nsew")
 
     icon_label = ctk.CTkLabel(frame_right, image=icon_user_ctk_image,text="")
@@ -77,8 +77,9 @@ def login_screen():
 
 
     toggle_button = ctk.CTkButton(frame_right,text="", image=eye_open_ctk_image, command=toggle_password_visibility,
-                                  fg_color="transparent", width=2, height=2)
+                                  fg_color="transparent", width=2, height=2, hover=0)
     toggle_button.place(x=265, rely=0.5, anchor="center")
+
 
     login_button = ctk.CTkButton(frame_right, text="Login", command=attempt_login, fg_color="purple")
     login_button.place(x=180,rely=0.6, anchor="center")
