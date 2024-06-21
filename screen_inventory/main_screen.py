@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from tab_inventory import MainFrame
+from screen_inventory.tab_inventory import MainFrame
 
 
 class MenuView(ctk.CTkTabview):
@@ -30,8 +30,8 @@ class Screen(ctk.CTk):
         self.tab_inv = self.tab_view.tab("INVENTORY")
         MainFrame(frame_window=self.tab_inv)
 
+    def open_main_screen(self):
+        self.title("IMS")
+        self.after(0, lambda: self.state())
+        self.mainloop()
 
-root = Screen()
-root.title("IMS")
-root.after(0, lambda: root.state())
-root.mainloop()
