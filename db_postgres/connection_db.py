@@ -7,5 +7,5 @@ def connect_to_db():
         host="localhost",
         database="postgres",
         user="postgres",
-        password="SENHA DE BANCO"
+        password="ALTERE SUA SENHA DE BANCO"
     )

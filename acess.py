@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import Image
 from screen_inventory.main_screen import Screen
-from database.connection_db import connect_to_db
+from db_postgres.connection_db import connect_to_db
 
 
 def check_login(username, password):

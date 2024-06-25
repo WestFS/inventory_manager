@@ -1,13 +1,13 @@
 import customtkinter as ctk
 from screen_inventory.tab_inventory import MainFrame
+from screen_inventory.logs import LogFrame
 
 
 class MenuView(ctk.CTkTabview):
     def __init__(self, main_window, **kwargs):
         super().__init__(main_window, **kwargs)
-        self.add("HOME")
         self.add("INVENTORY")
-        self.add("SALES")
+        self.add("LOGS")
 
 
 class Screen(ctk.CTk):
@@ -29,6 +29,8 @@ class Screen(ctk.CTk):
         self.tab_view.pack()
         self.tab_inv = self.tab_view.tab("INVENTORY")
         MainFrame(frame_window=self.tab_inv)
+        self.tab_log = self.tab_view.tab("LOGS")
+        LogFrame(frame_window=self.tab_log)
 
     def open_main_screen(self):
         self.title("IMS")
