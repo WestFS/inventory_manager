@@ -13,7 +13,7 @@ Para a utilização do IMS, o aplicativo de Gerenciamento de Estoque, são neces
 
 Você tambem pode descompactar o arquivo .zip e abra-o em sua IDE de preferência.
 
-[inventory_manager-main.zip](PROJETO%20DE%20EXTENSAO%2038fddba15ee44cb48bc1254d6a39eb61/inventory_manager-main.zip)
+[inventory_manager-main.zip](a13ef6ba-0811-484f-ba78-6caf7e4007f0_Export-1761a18a-6bd6-4a81-b253-47ae18a23710.zip)
 
 É necessário ter certas bibliotecas instaladas em sua IDE, sendo elas:
 
